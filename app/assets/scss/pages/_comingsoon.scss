@@ -1,0 +1,37 @@
+.coming-soon{
+	@include default-page;
+	display: flex;
+	.content{
+    align-self: center;
+    width: 100%;
+    h3 {
+    	font-size: 3vw;
+    	color: #4BC8F9;
+    	font-family: 'Poppins-ExtraBold';
+    }
+    img {
+    	width: 45%;
+    }
+    h1{
+			font-size: 7vw;
+			font-family: 'Poppins-ExtraBold';
+			line-height: 90%;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+  .coming-soon {
+    .content{
+      h3 {
+        font-size: 50px;
+      }
+      img {
+        width: 250px;
+      }
+      h1 {
+        font-size: 60px;
+      }
+    }
+  }
+}

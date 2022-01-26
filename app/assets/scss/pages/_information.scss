@@ -1,0 +1,22 @@
+.information-page{
+  background: $loginBG;
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  .content{
+    position: absolute;
+    width: 100%;
+    align-self: center;
+    .form-title{
+      margin-left: 0;
+    }
+  }
+  .pbcore_logo{
+    width: 280px;
+    margin: auto auto 50px auto;
+    display: block;
+  }
+}
+.reset .content{
+  top: 11% !important;
+}

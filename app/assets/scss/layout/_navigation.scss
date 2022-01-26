@@ -1,0 +1,18 @@
+.nav-tabs{
+	border-color: #D1E4F0 !important;
+	.nav-link{
+		border: none !important;
+		color: $grayColor;
+		padding: 18px 40px;
+		outline: none;
+	}
+	.active{
+		border-top: none !important;
+		border-left: none !important;
+		border-right: none !important;
+		border-bottom: 6px solid #196ED8 !important;
+		padding: 17px 40px;
+		font-family: 'Poppins-Medium' !important;
+		color: #34475F !important;
+	}
+}

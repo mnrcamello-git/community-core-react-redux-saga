@@ -1,0 +1,53 @@
+.not-found-page{
+	display: flex;
+	@include default-page;
+	.main-content{
+    width: 100%;
+    align-self: center;
+    .align-self-center {
+    	left: -10%;
+    }
+		.message{
+			h1{
+				font-size: 9vw;
+				letter-spacing: 5px;
+				margin-bottom: 0;
+				font-family: $fontBold;
+			}
+			h2{
+				font-size: 3vw;
+				color: #BAF4FF;
+				font-family: $fontBold;
+			}
+			button {
+				font-size: 1vw;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.not-found-page {
+		.main-content {
+			.align-self-center {
+	    	left: unset;
+	    }
+			img {
+				width: 80%;
+			}
+			.message {
+				h1 {
+					font-size: 60px;
+					margin-top: 20px;
+				}
+				h2 {
+					font-size: 30px;
+				}
+				button {
+					width: 200px !important;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}

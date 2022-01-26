@@ -1,0 +1,204 @@
+.invoicing {
+  .data-table{
+    position: relative;
+    .statement-account-page {
+      padding: 20px 40px;
+      height: 72vh !important;
+      overflow-y: auto;
+    }
+    .statement-of-account {
+      .no-invoice-balance {
+        border: 1px solid #D0E3F0;
+        box-shadow: 0px 3px 6px #B2BDC629;
+        border-radius: 5px;
+        height: 60vh;
+        background: url('../../assets/images/hub/invoice/blue-paint-bg.svg') no-repeat center; 
+        img {
+          margin-top: -120px;
+        } 
+        h3 {
+          color: #2772E2;
+        }
+        p {
+          font-size: 12px !important;
+        }
+      }
+      .card {
+        border-color: #D0E3F0 !important;
+        box-shadow: 0px 3px 6px #B2BDC629;
+        .card-body {
+          padding: 0;
+          ul{
+            list-style: none;
+          }
+          p{
+            color: $grayColor;
+            font-size: $mainFontSize;
+            line-height: 30px;
+          }
+          strong {
+            color: black;
+            font-weight: 600;
+          }
+          .middle-content {
+            background-color: #F8FBFF;
+            hr {
+              color: #CCE0F7;
+              border-top: 4px solid #CCE0F7;
+            }
+            p {
+              font-size: 13px !important;
+            }
+          }
+          .bottom-content {
+           box-shadow: 0px 3px 6px #B2BDC629;
+           border-top: 1px solid #D0E3F0;
+           font-size: 14px;
+          }
+          .rdt_Table {
+            padding: 15px 0;
+            border-top: 1px solid #D1E4F0 !important;
+            border-bottom: 1px solid #D1E4F0 !important;
+            .rdt_TableHeadRow {
+              .rdt_TableCol {
+                display: inline;
+                div {
+                  &#column-amount_due {
+                    width: 100%;
+                    div {
+                      width: 100%;
+                    }
+                  }
+                  &#column-undefined {
+                    width: 100%;
+                    text-align: center;
+                    display: inline;
+                  }
+                  div {
+                    font-size: 12px !important;
+                    text-overflow: unset;
+                  }
+                }
+              }
+              .rdt_TableCol:nth-child(5), .rdt_TableCol:nth-child(6), .rdt_TableCol:nth-child(7)  {
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    .billing-history {
+      p {
+        font-size: 12px !important;
+        color: #6F849F;
+      }
+      .no-balance {
+        margin: 15px 40px 10px;
+        border: 1px solid #D0E3F0;
+        box-shadow: 0px 3px 6px #B2BDC629;
+        border-radius: 5px;
+        height: 60vh;
+        background: url('../../assets/images/hub/invoice/blue-paint-bg.svg') no-repeat center; 
+        img {
+          margin-top: -120px;
+        } 
+        h3 {
+          color: #2772E2;
+        }
+        p {
+          font-size: 12px !important;
+        }
+      }
+      .billing-history-buttons {
+        position: absolute;
+        right: 15px;
+        top: 9px;
+        margin-right: 20px;
+        font-size: 12px !important;
+        img{
+          margin-left: 5px;
+          vertical-align: unset;
+        }
+        button{
+          border-color: #D3D8E1;
+          box-shadow: 0 0 2px 0 #D3D8E1;
+          outline: none;
+          &:hover, &:active, &:focus{
+            background-color: $mainColor !important;
+            box-shadow: none !important;
+            color: #fff;
+            img{
+             filter: brightness(0) invert(1);
+            }
+          }
+        }
+      }
+      .rdt_Table {
+        height: 63vh;
+        overflow: auto;
+        .rdt_TableHead {
+          position: -webkit-sticky;
+          position: sticky;
+          top: 0;
+          z-index: 9;
+          .rdt_TableHeadRow {
+            .rdt_TableCol {
+              div {
+                &#column-balance {
+                  width: 100%;
+                  text-align: right;
+                  div {
+                    width: 100%;
+                  }
+                }
+                div {
+                  font-size: 12px !important;
+                }
+              }
+            }
+            margin-bottom: 0 !important;
+            .rdt_TableCol:nth-child(4) {
+              text-align: right;
+              display: inline;
+            }
+          }
+        }
+        .rdt_TableBody {
+          display: block;
+        }
+      }
+      .btn-primary{
+        padding: 2px 14px !important;
+        border-radius: 15px;
+      }
+      .badge{
+        font-weight: normal !important;
+      }
+      .paid{
+        background-color: #9EF4C6;
+      }
+      .open{ 
+        background-color: #F8E5B9;
+      }
+      .cancelled{
+        background-color: #FDD6E7;
+      }
+    }		
+  }
+  .dropdown-item:active {
+    background-color: #f8f9fa !important;
+  }
+
+  /* always show scrollbars */
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  }
+}

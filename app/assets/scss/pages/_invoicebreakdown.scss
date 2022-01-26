@@ -1,0 +1,41 @@
+.invoice-breakdown{
+  background-color: #EFF4FA;
+  min-height: 100vh;
+  overflow-x: hidden;
+  .main-header{
+    color: #fff;
+    padding: 30px 0;
+    box-shadow: 0px 0px 9px 1px #D3D8E1;
+    background-image: linear-gradient(to right, #1072EB , #02BDF9);
+  }
+  .disclaimer{
+    background-color: #FDE5E5;
+    padding: 15px 25px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 1px 0px #D3D8E1;
+  }
+  .card {
+    .export-buttons {
+      padding: 10px 50px;
+      border-bottom: 1px solid #dee2e6;
+      button{
+        margin-left: 20px;
+      }
+    }
+    .card-body {
+      padding: 0 50px;
+      ::-webkit-scrollbar {
+        -webkit-appearance: none;
+        color: red;
+        background-color: red;
+        width: 7px;
+        height: 7px;
+      } 
+      ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: red;
+        -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+      }
+    }
+  }
+}

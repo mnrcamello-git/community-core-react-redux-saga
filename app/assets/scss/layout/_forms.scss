@@ -1,0 +1,244 @@
+.form-group {
+  .text-danger {
+    font-family: $mainFont;
+    font-size: 13px;
+    color: #EB116D !important;
+  }
+
+  input::placeholder {
+    color: #BABABA;
+  }
+
+  select {
+    color: #8993A0 !important;
+    height: 45px;
+  }
+
+  input[type="radio"] {
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    align-self: center;
+    margin-right: 20px;
+  }
+  
+  input[type="file"] {
+    font-family: $mainFont;
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('../../assets/images/updown_icon.png') no-repeat right 18px center;
+  }
+
+//Multi Select Field
+  .css-2b097c-container {
+    .select-control__control {
+      min-height: 45px;
+      border-radius: 2px;
+      border-color: #A8B1C4;
+      background: url('../../assets/images/updown_icon.png') no-repeat right 18px center;
+      .select-control__value-container {
+        padding: 0 20px;
+      }
+      &:active {
+        color: red !important;
+      }
+      .select-control__indicators {
+        display: none;
+      }
+    }
+    .select-control__menu {
+      z-index: 9;
+      div div{
+        color: #8993A0;
+        background-color: transparent;
+        &:hover {
+          background-color: #1675E7;
+          color: #fff;
+          cursor: pointer;
+        }
+      }
+      ::-webkit-scrollbar {
+        -webkit-appearance: none;
+        background-color: transparent;
+        width: 10px;
+        height: 7px;
+      } 
+      ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: #DBE4F2;
+        -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+      }
+    }
+    .select-control__multi-value {
+      background-color: #10bcef;
+      color: #fff;
+      .select-control__multi-value__label {
+        color: #fff;
+        font-family: $fontMedium;
+      }
+      .select-control__multi-value__remove:hover {
+        background-color: transparent;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+    }
+  }
+  .form-control {
+    border-color: #A8B1C4;
+    height: 45px;
+    border-radius: 2px;
+    padding: 0 20px;
+    color: #8993A0;
+    &:focus {
+      box-shadow: 0 0 0 0.1rem rgba(30,118,226,0.25);
+      border-color: #1E76E2;
+      color: #8993A0;
+    }
+    &:disabled {
+      background-color: #F0F6FF;
+    }
+    &.is-invalid {
+      box-shadow: 0 0 0 0.1rem rgba(235,17,109,0.25);
+      border-color: #EB116D !important;
+      background-image: none;
+      padding-right: 20px;
+    }
+  }
+  .react-datepicker {
+    box-shadow: 0px 1px 10px #608FBA4D;
+    border: 1px solid #DBE4F2;
+    .react-datepicker__triangle {
+      border-bottom-color: #10bcef !important;
+    }
+    .react-datepicker__navigation {
+      top: 14px;
+      outline: none;  
+      &.react-datepicker__navigation--next {
+        border-left-color: #fff;
+      }
+      &.react-datepicker__navigation--previous {
+        border-right-color: #fff;
+      }
+    }
+    .react-datepicker__month-container {
+      width: 280px;
+
+      .react-datepicker__header {
+        padding-top: 0;
+        .react-datepicker__current-month {
+          background-color: #10BCE6;
+          font-family: $mainFont;
+          font-weight: normal;
+          color: #fff;
+          padding: 10px 0;
+        }
+        .react-datepicker__day-names {
+          background-color: #F8FAFD;
+          padding: 5px;
+          .react-datepicker__day-name {
+            font-family: $fontSemiBold;
+            text-transform: uppercase;
+            margin: 3px 6px;
+          }
+        }
+      }
+      .react-datepicker__month {
+        .react-datepicker__day {
+          font-family: $mainFont;
+          margin: 3px 6px;
+        }
+        .react-datepicker__day--selected {
+          background-color: #1E76E2;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.white-form-login {
+  padding: 60px;
+  background: #fff;
+  border-radius: 25px;
+  .form-title {
+    font-size: 30px;
+    color: #1E76E2; 
+    font-family: $fontSemiBold;
+  }
+  input{
+    border: 1px solid #1072EB;
+    border-radius: 4px;
+    color: $grayColor;
+    padding: 14px 15px;
+    width: 100%;
+    margin: 8px 0;
+    outline: none;
+  }
+  input::placeholder {
+    color: $grayColor;
+    opacity: 1;
+  }
+  label{
+    margin-bottom: 0;
+    color: #1072EB;
+    font-size: 11px;
+    font-family: $fontSemiBold;
+  }
+  .inputWithIcon {
+    position: relative;
+    display: flex;
+    .icon-eye {
+      position: absolute;
+      color: #2772E2;
+      right: 14px;
+      cursor: pointer;  
+      align-self: center;
+    }
+  }
+}
+
+.login-form {
+  width: 100%;
+  img {
+    width: 150px;
+    &.pb-logo {
+      width: 210px;
+    }
+  }
+  .form-title {
+    font-size: unset;
+    span {
+      font-size: 1.5vw;
+    }
+  }
+  @extend .white-form-login;
+  box-shadow: 0px 3px 19px #044391;
+  border-radius: 10px; 
+  button {
+    margin-top: 10px;
+  }
+  padding: 8% 10%;
+  .forgot-password{   
+    a {
+      color: #1E76E2;
+      font-family: $fontSemiBold;
+      text-decoration: underline;
+    }
+  }
+} 
+
+@media screen and (max-width: 991px) {
+  .white-form-login {
+    padding: 30px;
+    input {
+      font-size: 12px !important;
+      padding: 10px 15px;
+    }
+    .error-message {
+      font-size: 11px;
+    }
+  }
+}

@@ -1,0 +1,410 @@
+.brand-button-primary {
+  color: #fff;
+  font-size: 18px;
+  padding: 15px;
+  background: #1E76E2;
+  border: 1px solid #1E76E2;
+  border-radius: 58px;
+  outline: none !important;
+  font-family: 'Poppins-Medium';
+  @include default-transition;
+  &:hover{
+    @include default-transition;
+    border: 1px solid #fff;
+    background-color: #0f52a3;
+    color: #fff;
+  }
+}
+
+.brand-button-danger {
+  color: #fff;
+  font-size: 18px;
+  padding: 15px;
+  margin-top: 40px;
+  background: #ff4c4c;
+  border: 1px solid #ff4c4c;
+  border-radius: 58px;
+  outline: none !important;
+  font-family: $mainFont;
+  @include default-transition;
+  &:hover{
+    @include default-transition;
+    border: 1px solid #fff;
+    background-color: #ff1c1c;
+  }
+}
+
+.cancel {
+  color: #fff;
+  font-size: 18px;
+  padding: 15px;
+  background-color: #00C7FB;
+  border: 1px solid #00C7FB;
+  border-radius: 58px;
+  outline: none !important;
+  font-family: $mainFont;
+  @include default-transition;
+  &:hover{
+    @include default-transition;
+    border: 1px solid #fff;
+    background-color: #15aad1
+  }
+}
+
+.primary-button {
+  padding: 7px 30px;
+  border-radius: 3px;
+  margin: 0 0 0 10px;
+  color: #fff;
+  font-size: 15px;
+  background: #1E76E2;
+  border: 1px solid #1E76E2;
+  outline: none !important;
+  font-family: $mainFont;
+  i{
+    margin-right: 15px; 
+  }
+  @include default-transition;
+  &:hover{
+    @include default-transition;
+    border: 1px solid #fff;
+    background-color: #0f52a3;
+  }
+}
+
+.btn-primary {
+  background-color: #1E76E3 !important;
+  padding: 8px 18px !important;
+  &:hover{
+    background-color: #007bff !important
+  }
+}
+.gray-btn {
+  color: #fff !important; 
+  font-size: 18px !important;
+  padding: 15px !important;
+  width: 130px;
+  background-color: #A2B1C4 !important;
+  border: 1px solid #A2B1C4 !important;
+  border-radius: 58px !important;
+  outline: none !important;
+  font-family: $mainFont;
+  @include default-transition;
+  &:hover{
+    @include default-transition;
+    border: 1px solid #fff !important;
+    background-color: #A2B1C4 !important;
+  }
+}
+
+.blue-btn {
+  color: #fff !important; 
+  font-size: 18px !important;
+  padding: 15px !important;
+  width: 130px;
+  background-color: #1E76E2 !important;
+  border: 1px solid #1E76E2 !important;
+  border-radius: 58px !important;
+  outline: none !important;
+  font-family: $mainFont;
+  @include default-transition;
+  &:hover{
+    @include default-transition;
+    border: 1px solid #fff !important;
+    background-color: #1E76E2 !important;
+  }
+}
+
+.cancel-btn {
+  font-family: $mainFont;
+  font-size: 14px;
+  width: 120px;
+  padding: 10px 0;
+  border-radius: 50px;
+  border: 1px solid #A2B1C4;
+  color: #fff;
+  background-color: #A2B1C4;
+}
+
+.default-btn {
+  font-family: $mainFont;
+  font-size: 14px;
+  width: 120px;
+  padding: 10px 0;
+  border-radius: 50px;
+  border: 1px solid $mainColor;
+  color: #fff;
+  background-color: $mainColor;
+  &:disabled {
+    background-color: #75a6ee !important;
+    border-color: #75a6ee !important;
+    cursor: not-allowed;
+  }
+}
+
+.back-btn {
+  background-color: $mainColor;
+  padding: 14px 25px;
+  border: 1px solid $mainColor;
+  display: flex;
+  border-radius: 25px;
+  top: -26px;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  img {
+    margin-right: 5px;
+    transform: translateX(0);
+
+    @include default-transition;
+  }
+  &:hover {
+    img {
+      transform: translateX(-5px);
+      @include default-transition;
+    }
+    a {
+      color: #fff;
+    }
+  }
+  a {
+    text-decoration: none !important;
+    color: #fff;
+  }
+}
+
+.nav-buttons {
+  text-align: right;
+  margin: 0 4rem;
+  button {
+    padding: 10px 0;
+    font-size: 12px;
+    width: 100px;
+    margin-left: 15px;
+    border-radius: 58px !important;
+    outline: none !important;
+    font-family: $mainFont;
+    @include default-transition;
+    &.prev-btn {
+      background-color: #10BCE6 !important;
+      border: 1px solid #10BCE6;
+      &:hover {
+        border: 1px solid #fff;
+        background-color: #10BCE6;
+      }
+    }
+    &.next-btn {
+      background-color: #1E76E2 !important;
+      border: 1px solid #1E76E2;
+      &:hover {
+        border: 1px solid #fff;
+        background-color: #1E76E2;
+      }
+    }
+    &:hover {
+      @include default-transition;
+    }
+  }
+}
+
+.dropdown-toggle::after {
+  border-top: .3em solid !important;
+  border-right: .3em solid transparent !important;
+  border-bottom: 0 !important;
+  border-left: .3em solid transparent !important;
+  vertical-align: inherit !important;
+  margin-left: 10px !important;
+  box-shadow: 0px 0px 4px #628DC72F;
+}
+
+.filter-btn {
+  background-color: #10BCE6 !important;
+  border: none !important;
+  display: flex !important; 
+  height: 13px;
+  width: 13px;
+  padding: 0 !important;
+  border-radius: 12px !important;
+  outline: none;
+  vertical-align: unset !important;
+  i {
+    color: #fff;
+    font-size: 9px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    align-self: center;
+  }
+  &:after {
+    color: #fff !important;
+    position: absolute;
+    top: 0;
+    border-top: 3px solid !important;
+    border-right: 3px solid transparent !important;
+    border-left: 3px solid transparent !important;
+    top: 4.8px;
+    left: -7px;
+  }
+}
+
+.gear-btn {
+  background-color: #fff !important;
+  box-shadow: 0px 0px 4px #628DC72F;
+  border: 0.5px solid #E6E6E6 !important;
+  padding: 2px 10px !important;
+  border-radius: 15px !important;
+  color: #1E76E3 !important;
+  @include default-transition;
+  &:hover {
+    @include default-transition;
+    color: #fff !important;
+  }
+  &:focus, &:focus, &:hover {
+    box-shadow: none !important;
+  }
+}
+
+.nav-buttons {
+  text-align: right;
+  margin: 0;
+  button {
+    padding: 10px 0;
+    font-size: 12px;
+    margin-left: 15px;
+    border-radius: 58px !important;
+    outline: none !important;
+    font-family: $mainFont;
+    @include default-transition;
+    &.save-btn {
+      background-color: #10BCE6 !important;
+      border: 1px solid #10BCE6;
+      @include default-transition;
+    }
+    &.cancel-btn {
+      background-color: #A2B1C4 !important;
+      border: 1px solid #A2B1C4;
+      @include default-transition;
+    }
+    &.prospect-btn {
+      background-color: #1E76E2 !important;
+      width: auto;
+      padding: 8px 30px !important;
+      display: inline-block;
+      @include default-transition;
+    }
+  }
+}
+
+.input-file {
+  @extend .btn-primary;
+  width: 150px !important;
+  border-radius: 58px;
+  color: #fff;
+  
+  position: relative;
+  overflow: hidden;
+  > input {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    font-size: 50px;
+  }
+}
+
+.mailconfig-upload :hover{
+  @extend .btn-primary;
+  border-radius: 10px;
+  padding: 5px 0px !important;
+  font-family: 'Poppins-Medium';
+  font-size: 15px;
+  width: auto;
+  color: inherit;
+  cursor: pointer !important;
+  
+}
+
+.mailconfig-upload-cursor {
+  cursor: pointer !important;
+  
+}
+
+.mailconfig-status {
+  border-radius: 10px;
+  background-color: #FFE9CE !important;
+  width: auto;
+  padding: 6px 20px !important;
+  display: inline-block;
+  font-weight: 'bold';
+  font-size: 24px;
+  @include default-transition;
+}
+
+.mailconfig-status > span {
+  color: #F7931E;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.mailconfig-status-failed {
+  border-radius: 10px;
+  background-color: #D6C5FC !important;
+  width: auto;
+  padding: 6px 20px !important;
+  display: inline-block;
+  font-weight: 'bold';
+  font-size: 24px;
+  @include default-transition;
+}
+
+.mailconfig-status-failed > span {
+  color: #6429E6;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width:767px){
+  .btn-primary{
+    padding: 8px 8px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .brand-button-primary {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .cancel {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .filter-btn {
+    width: 11px;
+    height: 11px;
+    i {
+      font-size: 9px;
+      top: 1px;
+    }
+    &:after {
+      border-top: 4px solid !important;
+      border-right: 3px solid transparent !important;
+      border-left: 3px solid transparent !important;
+      top: 4px;
+    }
+  }
+}
+
+.unstyled-button {
+  border: none;
+  padding: 0;
+  background: none;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #10BCE6;
+  font-size: 14px;
+  font-weight: 200;
+}

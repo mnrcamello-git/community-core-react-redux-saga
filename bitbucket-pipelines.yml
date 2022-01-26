@@ -1,0 +1,12 @@
+image: atlassian/default-image:2
+
+pipelines:
+  branches:
+    feature/dev:
+      - step:
+          name: 'push to staging'
+          script:
+          - git fetch
+          - git checkout -b release/staging
+          - git merge feature/dev
+          - git push -v --tags origin release/staging:release/staging

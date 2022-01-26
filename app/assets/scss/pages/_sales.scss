@@ -1,0 +1,260 @@
+#sales {
+  .job-requisition {
+    thead {
+      tr {
+        .status-name {
+          width: 170px;
+        }
+      }
+    }
+    tbody {
+      max-height: 44vh;
+      tr {
+        .td-status-name{
+          width: 170px;
+          span {
+            &.MSA-I {
+              background-color: #C6DEFC;
+              color: #1E76E2;
+            }
+            &.MSA-II {
+              background-color: #BAF2FF;
+              color: #01A6CE;
+            }
+            &.OSA-I {
+              background-color: #D6C5FC;
+              color: #6429E6;
+            }
+            &.active {
+              background-color: #B8F5A2;
+              color: #299601;
+            }
+            &.inactive {
+              background-color: #FFBFA7;
+              color: #E33E00;
+            }
+            &.On-Hold {
+              background-color: #FFE9CE;
+              color: #F7931E;
+            }
+            &.exiting-30d {
+              background-color: #FFD6F1;
+              color: #FF48B9;
+            }
+            &.exiting-60d{
+              background-color: #FFF8C4;
+              color: #FAB700;
+            }
+            &.exited-pending {
+              background-color: #E5ACFF;
+              color: #8700C4;
+            }
+            &.exited {
+              background-color: #FFE8E8;
+              color: #FF5959;
+            }
+            &.prospect {
+              background-color: #CCFFEF;
+              color: #0A9368;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.show {
+  padding-left: 0 !important;
+}
+.due-diligence-modal {
+  max-width: 100% !important;
+  margin: 0 !important;
+  background-color: #EFF4FA;
+  small {
+    font-size: 10px;
+  }
+  .modal-content {
+    background-color: transparent;
+    border: none;
+    .back-btn {
+      padding: 6px 30px;
+      display: flex;
+      color: #fff;
+      top: 0;
+      left: 10px;
+      position: absolute;
+      margin: 12px 0px;
+      img {
+        align-self: center;
+        margin-right: 14px;
+        width: 12px;
+        margin-left: -13px;
+      }
+    }
+    .modal-header {
+      width: 100%;
+      text-align: center;
+      display: inline-block;
+      box-shadow: 0px 0px 18px #8B8B8B5A;
+      border: 1px solid #DBE4F2;
+      background-color: #fff;
+      border-radius: 0;
+      h1 {
+        margin-bottom: 0;
+        font-size: 20px;
+        color: $defaultColor;
+        font-family: $fontMedium;
+      }
+    }
+    .modal-body {
+      width: 80%;
+      margin: 20px auto 40px;
+      background-color: #fff; 
+      padding: 0;
+      .tab-content {
+        input[type=checkbox] {
+          transform: scale(1.8);
+          margin-right: 3rem;
+        }
+        li {
+          color: #6F849F;
+        }
+        p {
+          color: #6F849F !important;
+          line-height: 24px;
+          margin-bottom: 0;
+        }
+        table.upload {
+          width: 100%;
+          margin-top: 10px;
+          padding: 15px 25px;
+          border: 2px solid #EEEEEE;
+          display: block;
+          position: relative;
+          tr {
+            width: 100%;
+            display: block;
+            position: relative;
+            td { 
+              a {
+                color: #2675E4;
+                font-family: 'Poppins-Medium' !important;
+              }
+              .timestamp {
+                font-size: 10px;
+                color: #6F849F;
+                margin-top: 5px;
+              }
+              .download-button {
+                position: absolute;
+                right: 0;
+                top: 14px;
+                display: inline-flex;
+                img {
+                  width: 14px;
+                }
+              }
+            }
+          }
+          &.multiple-files {
+            padding: 0;
+            tr {
+              border-top: 2px solid #EEEEEE;
+              padding: 15px 25px;
+              &:first-of-type {
+                border-top: none;
+              }
+              td {
+                .download-button {
+                  top: 30px;
+                  right: 25px;
+                }
+              }
+            }
+          }
+          &.authorized-representative {
+            padding: 0;
+            border: none;
+            .card-uploaded-files {
+              border: 1px solid #DBE4F2;
+              border-radius: 5px;
+              padding: 15px 25px;
+              margin-top: 20px;
+            }
+          }
+        }
+        .button-section {
+          cursor: pointer;
+          i {
+            border: 1px solid #DBE4F2;
+            border-radius: 15px;
+            height: 25px;
+            width: 26px;
+            font-size: 14px;
+            padding: 5px 7px;
+            color: #1375EA;
+          }
+          span {
+            align-self: center;
+            margin-left: 8px;
+            color: #2675E4;
+          }
+        }
+        .others-section {
+          input[type=checkbox] { 
+            margin: 2rem 0 0 0;
+          }
+          form {
+            width: 95%;
+            float: right;
+            padding: 2rem 0 0;
+            border: 1px solid #DBE4F2;
+            border-radius: 5px;
+            input[type=text], input[type=textarea] {
+              border: 0.5px solid #A8B1C4;
+              border-radius: 2px;
+              color: #BABABA !important;
+            }
+            textarea {
+              height: 100px;
+              color: #BABABA !important;
+              padding: 10px 20px;
+              &::placeholder {
+                color: #BABABA !important;
+              }
+            }
+            .form-label {
+              color: #34475F;
+              font-size: 14px;
+              font-family: $fontMedium;
+            }
+            .form-bottom {
+              margin: 2rem 0 0;
+              padding: 10px 2rem;
+              background-color: #F0F6FF;
+              border-top: 1px solid #DBE4F2;
+              text-align: right;
+              border-bottom-left-radius: 5px; 
+              border-bottom-right-radius: 5px; 
+              span {
+                color: #2675E4;
+                font-family: $fontMedium;
+                font-size: 14px;
+                margin-left: 8px;
+                cursor: pointer;
+              }
+              i {
+                color: #1375EA;
+                background-color: #fff;
+                border: 0.5px solid #DBE4F2;
+                padding: 5px 6px;
+                border-radius: 16px;  
+                cursor: pointer;    
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

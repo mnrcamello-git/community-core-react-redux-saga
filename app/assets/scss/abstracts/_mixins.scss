@@ -1,0 +1,30 @@
+@mixin default-transition {
+  -webkit-transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -moz-transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -ms-transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -o-transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+}
+
+@mixin slow-transition {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+@mixin slide-transition {
+  -webkit-transition: all 350ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -moz-transition: all 350ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -ms-transition: all 350ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -o-transition: all 350ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  transition: all 350ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+}
+
+@mixin default-page{
+  background: url('../../assets/images/default_background.png') no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: #fff;
+}

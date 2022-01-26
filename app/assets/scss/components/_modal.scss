@@ -1,0 +1,767 @@
+.for-interview-modal {
+  .modal-dialog {
+    max-width: 900px !important;
+    .modal-content {
+      box-shadow: 0px 1px 22px #608FBA4D;
+      border: 1px solid #DBE4F2;
+      .modal-body {
+      padding: 0 !important;
+        .col-sm-5 {
+          background: url('../../assets/images/hub/recruitment/whitebluebg-modal.svg') no-repeat center;
+          background-size: 100%;
+          .main-content {
+            background-image: 
+              url('../../assets/images/hub/recruitment/leaves_two.svg') , 
+              url('../../assets/images/hub/recruitment/leaves_one.svg') 
+            ;
+            background-position: 15% bottom, 90% bottom;
+            background-size: 35%;
+            padding: 2rem 0 4rem;
+            
+          }
+        }
+        .col-sm-7 {
+          border-left: 1px solid #DBE4F2;
+          padding: 2rem 2rem 1.5rem;
+          h5 {
+            font-size: 18px;
+          }
+          .form-group {
+            position: relative;
+            margin: 0 1rem 2rem;
+            .inline {
+              .react-datepicker-wrapper {
+                width: 46%;
+                .react-datepicker__input-container {
+                  input {
+                    width: 100%;
+                    border: 0.5px solid #A8B1C4;
+                    border-radius: 2px;
+                    height: 40px;
+                    padding: 0 10px; 
+                    background: url('../../assets/images/hub/recruitment/calendar_icon.png') no-repeat;
+                    background-position: 95% 50% !important;
+                    background-size: 14px !important;
+                    cursor: pointer;
+                  }
+                }
+                
+              }
+              .text-danger {
+                position: absolute;
+                bottom: -40px;
+                left: 14px;
+              }
+              &.first-date {
+                .react-datepicker-wrapper {
+                  float: left;
+                }
+              }
+            }
+            .error-message-spacer {
+              width: 10%;
+            }
+            span.to {
+              float: left;
+              width: 8%;
+              text-align: center;
+              color: #8993A0;
+              margin: 3px 0;
+            }
+          }
+        }
+        .modal-btn {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.job-offer-modal {
+  .modal-dialog {
+    .modal-content {
+      box-shadow: 0px 1px 22px #608FBA4D;
+      border: 1px solid #DBE4F2;
+      border-radius: 0px 5px 5px 0px;
+      .modal-body {
+        padding: 2rem;
+        .form-group {
+          .react-datepicker-wrapper {
+            width: 100%;
+            .react-datepicker__input-container {
+              input {
+                cursor: pointer;
+                background: url('../../assets/images/hub/recruitment/calendar_icon.png') no-repeat right 18px center;
+              }
+            }
+          }
+          .php {
+            width: 15%;
+            text-align: center;
+            padding: 10px 0px;
+            height: 45px;
+          }
+          input[type="number"] {
+            width: 85%;
+          }
+          input::-webkit-outer-spin-button,
+          input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.send-feedback-modal {
+  .modal-dialog {
+    max-width: 400px;
+    .modal-content {
+      background-color: #fff;
+      background-size: 60%;
+      box-shadow: 0px 1px 22px #608FBA4D;
+      border: 1px solid #DBE4F2;
+      .modal-header {
+        padding: 1rem 1.5rem;
+        > span {
+          font-size: 14px;
+        }
+        .close {
+          padding: 1rem 5px;
+          color: #fff;
+          opacity: 1;
+        }
+      }
+      .modal-body {
+        padding: 1.5rem 2rem;
+        text-align: center;
+        h5 {
+          color: #10BCE6;
+          font-family: $fontBold;
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+        label {
+          color: #34475F !important;
+          font-size: 12px !important;
+        }
+        .fa-star-o, .fa-star {
+          color: #FFCE00;
+          margin-right: 20px;
+          font-size: 24px;
+        }
+        textarea {
+          height: 150px;
+          resize: none;
+          border: 0.5px solid #A8B1C4;
+          border-radius: 2px;
+          color: #737A84 !important;
+          padding: 12px 20px;
+          font-size: 12px !important;
+          &::placeholder {
+            color: #BABABA;
+          }
+        }
+        .text-danger {
+          font-size: 12px !important;
+        }
+        .modal-btn {
+          float: right;
+          button {
+            font-family: $mainFont;
+            width: 110px;
+            margin: 0 0 0 15px;
+            padding: 8px 0 !important;
+            border-radius: 50px;
+            color: #fff;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.on-hold-modal {
+  .modal-dialog {
+    max-width: 473px !important;
+    .modal-content {
+      background: url('../../assets/images/hub/recruitment/orangebg_modal.svg') no-repeat center;
+      background-color: #fff;
+      background-size: 95% !important;
+      box-shadow: 0px 1px 22px #608FBA4D;
+      border: 1px solid #DBE4F2;
+      .modal-body {
+        padding: 1rem;
+        text-align: center;
+        h6 {
+          font-family: $fontMedium;
+          font-size: 14px;
+          margin-bottom: 20px !important;
+          color: #F7931E;
+        }
+        p {
+          font-family: $mainFont;
+          color: #F7931E !important;
+          font-size: 12px !important;
+          line-height: 25px;
+        }
+        textarea {
+          width: 90%;
+          margin: auto;
+          padding: 15px 20px !important;
+          height: 140px;
+          border: 1px solid #DBE4F2;
+          resize: none;
+          font-size: 12px !important;
+          &::placeholder {
+            color: #BABABA;
+            font-family: $mainFont;
+          }
+        }
+        img {
+          width: 100px;
+        }
+        .modal-btn {
+          background-image: 
+            url('../../assets/images/hub/recruitment/leaves_two.svg') , 
+            url('../../assets/images/hub/recruitment/leaves_one.svg') 
+          ;
+          background-size: 115px;
+          background-position: 15px bottom, 305px bottom !important;
+          padding-bottom: 5px;
+          button {
+            font-family: $mainFont;
+            width: 110px;
+            margin: 0 15px;
+            padding: 8px 0;
+            border-radius: 50px;
+            color: #fff;
+            font-size: 14px;
+            &.yes {
+              background-color: $mainColor;
+              border: 1px solid #1E76E2;
+            }
+            &.no {
+              background-color: #A2B1C4;
+              border: 1px solid #A2B1C4;
+            }
+            &.skip {
+              background-color: $pbColor;
+              border: 1px solid $pbColor;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.cancel-modal {
+    .modal-dialog {
+      .modal-content {
+        background: url('../../assets/images/hub/recruitment/whiteredbg-modal.svg') no-repeat center;
+        background-color: #fff;
+        .modal-body {
+          h6, p {
+            color: #FE5E54 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.duplicate-job-modal {
+  .modal-dialog {
+    max-width: 473px;
+    .modal-content {
+      background: url('../../assets/images/hub/recruitment/darkbluebg-modal.svg') no-repeat center;
+      background-color: #fff;
+      background-size: 80%;
+      box-shadow: 0px 1px 22px #608FBA4D;
+      border: 1px solid #DBE4F2;
+      .modal-body {
+        padding: 1rem 1.25rem !important;
+        text-align: center;
+        img {
+          width: 100px;
+          margin: auto;
+        }
+        h6 {
+          font-size: 14px;
+        }
+        p {
+          line-height: 25px;
+          font-size: 12px !important;
+          padding: 0 1rem;
+        }
+        select {
+          width: 85px !important;
+          height: 45px;
+          border: 0.5px solid #A8B1C4;
+          border-radius: 2px;
+          color: #8993A0;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          background: url('../../assets/images/updown_icon.png') no-repeat right 18px center, #fff;
+        }
+        .modal-btn {
+          background-image: 
+            url('../../assets/images/hub/recruitment/leaves_two.svg') , 
+            url('../../assets/images/hub/recruitment/leaves_one.svg') 
+          ;
+          background-position: 15px bottom, 305px bottom;
+          button {
+            &.yes {
+              background-color: $mainColor;
+              border: 1px solid #1E76E2;
+            }
+            &.no {
+              background-color: #A2B1C4;
+              border: 1px solid #A2B1C4;
+            }
+            &.skip {
+              background-color: $pbColor;
+              border: 1px solid $pbColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.requested-modal {
+  .modal-dialog {
+    max-width: 416px;
+    .modal-content {
+      background: url('../../assets/images/hub/recruitment/whitevioletbg-modal.svg') no-repeat center;
+      background-color: #fff;
+      background-size: 70%;
+      box-shadow: 0px 1px 22px #608FBA4D;
+      border: 1px solid #DBE4F2;
+      .modal-body {
+        padding: 1rem 1.25rem !important;
+        text-align: center;
+        img {
+          width: 90px;
+          margin: auto;
+        }
+        h6 {
+          font-size: 14px;
+          color: #6429E6;
+          font-family: $mainFont;
+          padding: 0 3rem;
+          line-height: 25px;
+        }
+        .modal-btn {
+          background-image: 
+            url('../../assets/images/hub/recruitment/leaves_two.svg') , 
+            url('../../assets/images/hub/recruitment/leaves_one.svg') 
+          ;
+          background-position: left 5px, right 15px;
+          padding-bottom: 5px;
+          button {
+            border: 1px solid #10BCE6; 
+            &.yes {
+              background-color: $mainColor;
+              border: 1px solid #1E76E2;
+            }
+            &.no {
+              background-color: #A2B1C4;
+              border: 1px solid #A2B1C4;
+            }
+            &.skip {
+              background-color: $pbColor;
+              border: 1px solid $pbColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.blue-scheme-modal {
+  .modal-content {
+    background: url('../../assets/images/hub/recruitment/bluebg_modal.svg') no-repeat center;
+    background-color: #fff;
+    background-size: 90%;
+    box-shadow: 0px 1px 22px #608FBA4D;
+    border: 1px solid #DBE4F2;
+    .modal-body {
+      padding: 1rem 1.25rem !important;
+      text-align: center;
+      img {
+        width: 110px;
+        margin: auto;
+      }
+      .php {
+        padding: 10px 0;
+        width: 25%;
+        text-align: center;
+      }
+      .form-group {
+        .react-datepicker-wrapper {
+          width: 100%;
+          input {
+            background: url('../../assets/images/updown_icon.png') no-repeat right 18px center, #fff;
+          }
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+      }
+      &.duplicate-modal {
+        p {
+          line-height: 25px;
+        }
+        select {
+          width: 85px !important;
+          height: 45px;
+          border: 0.5px solid #A8B1C4;
+          border-radius: 2px;
+          color: #8993A0;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          background: url('../../assets/images/updown_icon.png') no-repeat right 18px center, #fff;
+        }
+      }
+      .modal-btn {
+        background-image: 
+          url('../../assets/images/hub/recruitment/leaves_two.svg') , 
+          url('../../assets/images/hub/recruitment/leaves_one.svg') 
+        ;
+        background-position: left 5px, right 15px;
+        padding-bottom: 5px;
+        button {
+          border: 1px solid #10BCE6; 
+          &.yes {
+            background-color: $mainColor;
+            border: 1px solid #1E76E2;
+          }
+          &.no {
+            background-color: #A2B1C4;
+            border: 1px solid #A2B1C4;
+          }
+          &.skip {
+            background-color: $pbColor;
+            border: 1px solid $pbColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+.cancel-modal {
+  .modal-dialog {
+    max-width: 419px;
+    .modal-content {
+      background: url('../../assets/images/hub/recruitment/redbg_modal.svg') no-repeat center;
+      background-color: #fff;
+      background-size: 70%;
+      box-shadow: 0px 1px 22px #608FBA4D;
+      border: 1px solid #DBE4F2;
+      .modal-body {
+        padding: 1rem;
+        text-align: center;
+        h4 {
+          color: #FE5E54;
+          font-family: $mainFont;
+          text-align: center;
+          line-height: 22px;
+          margin: auto;
+          width: 80%;
+          font-size: 14px;
+        }
+        .text-danger {
+          color: #FE5E54 !important;
+        }
+        p {
+          font-size: 12px !important;
+        }
+        .modal-btn {
+          background-image: 
+            url('../../assets/images/hub/recruitment/leaves_two.svg') , 
+            url('../../assets/images/hub/recruitment/leaves_one.svg') 
+          ;
+          background-position: left bottom, right bottom;
+          padding-bottom: 5px;
+          button {
+            &.yes {
+              background-color: #1E76E2;
+              border: 1px solid #1E76E2;
+            }
+            &.no {
+              background-color: #A2B1C4 !important;
+              border: 1px solid #A2B1C4;
+            }
+            &.skip {
+              background-color: $pbColor;
+              border: 1px solid $pbColor;
+            }
+          }
+        }
+      }
+    }
+    &.error {
+      .modal-dialog {
+        max-width: 416px;
+        .modal-content {
+          .modal-body {
+            padding: 1rem;
+            h4 {
+              font-size: 14px;
+            }
+            p {
+              color: #FE5E54 !important;
+              font-size: 12px !important;
+            }
+            .modal-btn {
+              background-position: 0px 7px, 267px 17px;
+              background-size: 115px;
+              padding-bottom: 5px;
+              button {
+                width: 110px;
+                margin: 0 15px;
+                padding: 8px 0 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.confirm-save-modal {
+  .modal-dialog {
+    max-width: 419px;
+    .modal-content {
+      background: url('../../assets/images/hub/recruitment/bluebg_modal.svg') no-repeat center; 
+      background-color: #fff;
+      background-size: 70%;
+      box-shadow: 0px 1px 22px #608FBA4D;
+      border: 1px solid #DBE4F2;
+      .modal-body {
+        padding: 1rem;
+        text-align: center;
+        h4 {
+          color: #1e76e2;
+          font-family: $mainFont;
+          text-align: center;
+          line-height: 25px;
+          margin: auto;
+          padding: 0 3rem;
+          font-size: 14px;
+        }
+        .modal-btn {
+          margin-bottom: 10px;
+          background-image: 
+            url('../../assets/images/hub/recruitment/leaves_two.svg') , 
+            url('../../assets/images/hub/recruitment/leaves_one.svg') 
+          ;
+          background-position: left 5px, right 15px;
+          button {
+            &.yes {
+              background-color: #1E76E2;
+              border: 1px solid #1E76E2;
+            }
+            &.no {
+              background-color: #A2B1C4 !important;
+              border: 1px solid #A2B1C4;
+            }
+            &.skip {
+              background-color: $pbColor;
+              border: 1px solid $pbColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.save-modal {
+  .modal-dialog {
+    max-width: 419px;
+    .modal-content {
+      background: url('../../assets/images/hub/recruitment/bluebg_modal.svg') no-repeat center;
+      background-color: #fff;
+      background-size: 70%;
+      box-shadow: 0px 1px 22px #608FBA4D;
+      border: 1px solid #DBE4F2;
+      .modal-body {
+        padding: 2rem 1.5rem;
+        text-align: center;
+        h4 {
+          color: $mainColor;
+          font-family: $fontMedium;
+          text-align: center;
+          line-height: 22px;
+          margin: auto;
+          width: 80%;
+          font-size: 14px;
+        }
+        img {
+          width: 110px;
+          margin: auto;
+        }
+        .modal-btn {
+          background-image: 
+            url('../../assets/images/hub/recruitment/leaves_two.svg') , 
+            url('../../assets/images/hub/recruitment/leaves_one.svg') 
+          ;
+          background-position: left 5px, right 15px;
+        }
+      }
+    }
+  }
+  &.success {
+    .modal-dialog {
+      width: 344px; 
+      .modal-content {
+        background-size: 75%;
+        .modal-body {
+          padding: 1rem;
+          img {
+            width: 80px;
+          }
+          h4 {
+            font-size: 14px;
+            font-family: $mainFont;
+            line-height: unset;
+          }
+          .modal-btn {
+            background-position: left bottom, right bottom;
+            background-size: 115px;
+            padding-bottom: 5px;
+            button {
+              width: 110px;
+              padding: 8px 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.save-modal-due-diligence {
+  .modal-dialog {
+    max-width: 473px;
+    .modal-content {
+      background: url('../../assets/images/hub/recruitment/bluebg_modal.svg') no-repeat center;
+      background-color: #fff;
+      background-size: 70%;
+      box-shadow: 0px 1px 22px #608FBA4D;
+      border: 1px solid #DBE4F2;
+      .modal-body {
+        padding: 2rem 1.5rem;
+        text-align: center;
+        h4 {
+          color: $mainColor;
+          font-family: $fontMedium;
+          text-align: center;
+          line-height: 22px;
+          margin: auto;
+          width: 80%;
+          font-size: 14px;
+        }
+        p{
+          font-size: 12px !important;
+          padding: 0 40px;
+          margin-bottom: 5px !important;
+          color: #1E76E2 !important;
+        }
+        img {
+          width: 90px;
+          margin: auto;
+        }
+        .modal-btn {
+          background-image: 
+            url('../../assets/images/hub/recruitment/leaves_two.svg') , 
+            url('../../assets/images/hub/recruitment/leaves_one.svg') 
+          ;
+          background-position: left 5px, right 15px;
+        }
+      }
+    }
+  }
+}
+
+.agreements-modal {
+  .modal-dialog {
+    max-width: 432px !important;
+    .modal-content {
+      background: url('../../assets/images/hub/recruitment/bluebg_modal.svg') no-repeat center;
+      background-color: #fff;
+      background-size: 90%;
+      box-shadow: 0px 1px 22px #608FBA4D;
+      border: 1px solid #DBE4F2;
+      .modal-body {
+        padding: 1rem 1.5rem;
+        text-align: center;
+        h4 {
+          color: $mainColor;
+          font-family: $fontMedium;
+          text-align: center;
+          line-height: 22px;
+          margin: auto;
+          width: 80%;
+          font-size: 14px;
+        }
+        p {
+          color: $mainColor;
+          line-height: 22px;
+          margin: 0 15px;
+          a {
+            font-size: 12px !important;
+          }
+        }
+        img {
+          width: 110px;
+          margin: auto;
+        }
+        .modal-btn {
+          background-image: 
+            url('../../assets/images/hub/recruitment/leaves_two.svg') , 
+            url('../../assets/images/hub/recruitment/leaves_one.svg') 
+          ;
+          background-position: left 5px, right 15px;
+        }
+      }
+    }
+  }
+}
+
+.modal-btn {
+  background-size: 115px;
+  padding-bottom: 5px;
+  button {
+    font-family: $mainFont;
+    width: 110px;
+    margin: 0 15px;
+    padding: 8px 0;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+    &.yes {
+      background-color: #1E76E2 !important;
+      border: 1px solid #1E76E2;
+    }
+    &.skip {
+      background-color: $pbColor;
+      border: 1px solid $pbColor;
+    }
+    &.cancel, &.no {
+      background-color: #A2B1C4 !important;
+      border: 1px solid #A2B1C4;
+    }
+  }
+}

@@ -1,0 +1,263 @@
+#agreement-tab-tabpane-contract-drafts {
+  .job-requisition {
+    thead {
+      tr {
+        th {
+          &.agreement-code {
+            width: 145px;
+          }
+          &.version {
+            width: 98px;
+          }
+          &.date-created {
+            width: 129px;
+          }
+          &.contract-type {
+            width: 132px;
+          }
+          &.start-date {
+            width: 111px;
+          }
+          &.end-date {
+            width: 106px;
+          }
+          &.status-name {
+            width: 134px;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          &.td-agreement-code {
+            width: 145px;
+          }
+          &.td-version {
+            width: 98px;
+          }
+          &.td-date-created {
+            width: 129px;
+          }
+          &.td-contract-type {
+            width: 132px;
+          }
+          &.td-start-date {
+            width: 111px;
+          }
+          &.td-end-date {
+            width: 100px;
+          }
+          &.td-status-name {
+            width: 134px;
+            span {
+              font-family: $fontMedium;
+              padding: 6px 0;
+              margin: auto;
+              display: block;
+              width: 100%;
+              border-radius: 8px;
+              &.Draft {
+                background-color: #C6DEFC;
+                color: #1E76E2;
+              }
+              &.Rejected {
+                background-color: #FFE8E8;
+                color: #FF5959;
+              }
+              &.Accepted {
+                background-color: #B8F5A2;
+                color: #299601
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.contract-draft-modal {
+  max-width: 100% !important;
+  height: 100%;
+  margin: 0 !important;
+  background-color: #EFF4FA;
+  .modal-content {
+    background-color: #fff;
+    border: none;
+    ._loading_overlay_overlay {
+      height: 113vh;
+    }
+    .modal-header {
+      position: absolute;
+      z-index: 9;
+      width: 100%;
+      padding: 0 1rem;
+      box-shadow: 0px 0px 18px #8B8B8B5A;
+      background-color: #fff;
+      .back-btn {
+        padding: 6px 30px;
+        display: flex;
+        color: #fff;
+        top: 0;
+        left: 10px;
+        margin: 12px 0px;
+        img {
+          align-self: center;
+          margin-right: 14px;
+          width: 12px;
+          margin-left: -13px;
+        }
+      }
+    }
+    .modal-body {
+      //height: 88vh;
+      ::placeholder {
+        color: #BABABA; 
+      }
+      margin-top: 60px;
+      padding: 0;
+      .modal-row {
+        padding: 0 1rem;
+        height: 90vh;
+        margin-left: -17px !important;
+        margin-right: -17px !important;
+        .left-side {
+          background-color: #EFF4FA;
+          .empty-state {
+            height: 100%;
+            box-shadow: 0px 0px 5px #00000034;
+            background: #fff url('../../assets/images/hub/invoice/blue-paint-bg.svg') no-repeat center; 
+            h3 {
+              color: #2772E2;
+              font-size: 26px;
+            }
+            p {
+              font-size: 12px !important;
+              color: $grayColor;
+            }
+            > div {
+              margin-top: -3rem;
+            }
+          }
+        }
+        .right-side {
+          background-color: #fff;
+          .menus {
+            margin: 1.5rem 0;
+            text-align: center;
+            ul {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+              display: inline-flex;
+              li {
+                padding: 0 30px;
+                button {
+                  border-radius: 30px;
+                  box-shadow: 0px 1px 5px #00000033;
+                  padding: 10px !important;
+                  display: inline-flex;
+                  border: none;
+                  background-color: #fff !important;
+                  img {
+                    width: 18px;
+                  }
+                  &.active {
+                    background-color: #1E76E2 !important;
+                  }
+                  &:not([disabled]) {
+                    &:hover {
+                      background-color: #DBE4F2 !important;
+                    }
+                  }
+                }
+                span {
+                  display: block;
+                  font-family: $fontMedium;
+                  font-size: 10px;
+                  margin-top: 8px;
+                  color: #737A84;
+                }
+                &.divider {
+                  display: flex;
+                  div {
+                    border-left: 1px solid #dbe4f2;
+                    height: 40px;
+                    align-self: center;
+                  }
+                }
+              }
+            }
+            .download-icon {
+              display: inline-block;
+              padding: 8px 12px;
+              box-shadow: 0px 1px 5px #00000033;
+              border-radius: 30px;
+              img {
+                width: 14px;
+              }
+            }
+          }
+          .form-group {
+            textarea {
+              height: 12rem;
+              padding: 20px;
+              resize: none;
+              border: 1px solid #EEEEEE;
+            }
+            .dzu-dropzone {
+              border: 2px solid #EEEEEE;
+              border-radius: 0;
+              overflow: auto !important;
+              min-height: 90px;
+              background-color: #FAFAFA;
+              .dzu-inputLabel {
+                font-family: 'Poppins-Medium' !important;
+                font-weight: unset;
+                font-size: 14px;
+                color: #8D8D8D;
+                margin-bottom: 0;
+                padding: 0 20px;
+              }
+              .dzu-inputLabelWithFiles {
+                margin: 20px 3%;
+                align-self: flex-end;
+              }
+              &.dzu-dropzoneDisabled {
+                background-color: #F0F6FF;
+                opacity: 1;
+              }
+            }
+            table.upload {
+              width: 100%;
+              margin-top: 10px;
+              padding: 30px 25px;
+              border: 2px solid #EEEEEE;
+              display: block;
+              position: relative;
+              tr {
+                display: block;
+                position: relative;
+                width: 100%;
+                td {
+                  .action-btn {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    display: inline-flex;
+                    cursor: pointer;
+                    img {
+                      width: 18px;
+                      margin-left: 12px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

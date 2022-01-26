@@ -1,0 +1,178 @@
+.header{
+  background-image: linear-gradient(to right, #1072EB , #02BDF9);
+  padding: 15px 1.5em;
+  position: fixed;
+  width: 83%;
+  left: 17%;
+  z-index: 99;
+  img {
+    height: 90%;
+    align-self: center;
+  }
+  @include default-transition;
+  .search-bar{
+    display: none;
+    position: relative;
+    input{
+      background-color: rgba(255, 255, 255, 0.2 );
+      border: 1px solid transparent;
+      padding: 8px 15px 8px 40px;
+      color: #fff;
+      font-size: 15px;
+      width: 100%;
+      border-color: #3487ED;
+      font-family: $mainFont;
+      margin: 5px 0;
+    }
+    input::placeholder{
+      opacity: 1;
+    }
+    i{
+      position: absolute;
+      top: 16px;
+      left: 12px;
+      color: #fff;
+    }
+  }
+  .account-menu{
+    .text-left{
+      .burger-icon{
+        display: none;
+      }
+    }
+    .notification{
+      display: inline-block;
+      list-style: none;
+      color: #10bcef;
+      padding: 0;
+      margin: 0 5px 0 0;
+      position: relative;
+      li{
+        display: inline-block;
+        margin: 0;
+        text-align: center;
+        border-radius: 15px;
+        text-align: center;
+        button {
+          padding: 0;
+          color: #fff;
+          font-size: 18px;
+          span.active {
+            color: #fff;
+            background-color: #EB116D;
+            padding: 3px 0;
+            width: 20px;
+            font-size: 10px;
+            border-radius: 10px;
+            position: absolute;
+            left: 9px;
+            top: 0px;
+            font-family: $fontMedium;
+          }
+        }
+      }
+    }
+    h5{
+      margin: 13px 0;
+      color: #fff;
+      float: right;
+    }
+    img{
+      margin-right: 15px;
+      border-radius: 30px;
+    }
+    .user-name{
+      display: inline-block;
+      .dropdown-toggle::after{
+        margin-left: 15px;
+      }
+    }
+    button {
+      background: transparent !important;
+      border: 0;
+      box-shadow: none;
+      &:focus{
+        background-color: $mainColor !important;
+      }
+    }
+  }
+  &.active{
+    left: 8%;
+    width: 92%;
+    @include default-transition;
+  }
+}
+
+#notif-area{
+  b {
+    color: black !important;
+  }
+}
+
+.settings-modal {
+  .modal-content {
+    border: 1px solid #DBE4F2;
+    border-radius: 5px;
+    .modal-header {
+      background-image: linear-gradient(to right, #1072EB, #02BDF9);
+      .modal-title {
+        color: #fff;
+        font-family: $fontMedium;
+      }
+      button {
+        font-size: 14px;
+        border-radius: 30px;
+        padding: 5px 20px !important;
+      }
+    }
+    .modal-body {
+      padding: 0;
+      .col-sm-3 {
+        border-right: 1px solid #DBE4F2;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px){
+  .header{
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    left: 0;
+    .burger-icon{
+      filter: brightness(0) invert(1);
+      display: inline-block !important;
+      align-self: center;
+      img {
+        height: auto !important;
+      }
+    }
+    .col-md-12{
+      padding: 0;
+      .text-left{
+        float: left;
+        img{
+          margin: 11px 0;
+        }
+      }
+      .account-menu{
+        img{
+          margin-right: 5px;
+        }
+        .notification{
+          margin: 0 5px 0 0;
+          li{
+            margin: 0 7px;
+          }
+        }
+        .user-name{
+          display: inline;
+          button{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

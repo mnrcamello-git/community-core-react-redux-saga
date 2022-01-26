@@ -1,0 +1,21 @@
+.session-expired-page{
+	@include default-page;
+	.main-content{
+		position: absolute;
+    top: 23%;
+    width: 100%;
+    font-family: $mainFont;
+    h1{
+    	font-size: 120px;
+			font-weight: bolder;
+			letter-spacing: 2px;
+			margin-bottom: 0;
+    }
+		button{
+			background-color: #fff;
+			padding: 14px 80px;
+    	font-size: 20px;
+    	color: $mainColor;
+		}
+	}
+}

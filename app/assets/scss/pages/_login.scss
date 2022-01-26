@@ -1,0 +1,205 @@
+.login-main { 
+  background: $loginBG;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  &.set-password-main {
+    background: url('../../assets/images/set-password-page-bg.svg') no-repeat center !important;
+    background-size: cover !important;
+    .set-password-page {
+      height: 100vh;
+      display: flex;
+      background: url('../../assets/images/set-password-bg.svg') no-repeat 65px center;
+      background-size: 80%;
+      .login-form {
+        border-radius: 10px !important;
+        padding: 40px 20px !important;
+        width: 80%;
+        margin: auto;
+        .form-title {
+          span {
+            font-size: 34px;
+            &.expired-token {
+              color: #EB116D !important;
+            }
+            &.password-set {
+              color: #1B6EC4 !important;
+            }
+          }
+        }
+        .response-message {
+          font-size: 16px !important;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+  .content {
+    display: flex;   
+    width: 100%;   
+    .form-section { 
+      align-self: center;
+    }
+    .carousel-bg {
+      position: absolute;
+      width: 100%;
+      z-index: 99;
+      background: url('../../assets/images/carousel-bgv3.svg') no-repeat; 
+      background-size: 100%;
+      background-position: left;
+      align-self: center;
+      .pbcore-white {
+        width: 50%;
+      }  
+    }
+    .carousel-content {
+      img {
+        width: 100% !important;
+        margin: 40px 0 0 0px;
+        height: 50vh;
+      }
+      .carousel-indicators {
+        display: none;
+      }
+      .carousel-inner {
+        margin: auto;
+        width: 80%;
+      }
+      .carousel {
+        width: 100%;
+        margin: auto;
+      }
+      .carousel-control-prev {
+        background-color: #00AFCE;
+        width: auto;
+        opacity: 1;
+        padding: 5px 4px 5px;
+        right: 60px;
+        bottom: 10px;
+        left: unset;
+        top: unset;
+      }
+      .carousel-control-next {
+        background-color: #00AFCE;
+        width: auto;
+        opacity: 1;
+        padding: 5px 4px 5px;
+        right: 15px;
+        bottom: 10px; 
+        left: unset;
+        top: unset;
+      }
+      a { 
+        border: none;
+        box-shadow: 0px 5px 11px #628DC75A;
+        .carousel-control-next-icon {
+          background: url('../../assets/images/angle-right.svg') no-repeat;
+          background-size: 80%;
+          background-position: center;
+          filter: brightness(0) invert(1);
+        }
+        .carousel-control-prev-icon {
+          background: url('../../assets/images/angle-left.svg') no-repeat;
+          background-size: 80%;
+          background-position: center;
+          filter: brightness(0) invert(1);
+        }
+      }
+    } 
+    .copyright p {
+      margin: 30px 0 0;
+      color: #fff;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .login-main {
+    .content {
+      display: block;
+      .carousel-bg {
+        position: unset;
+        background-size: 100%;
+        margin: 20px 0;
+        .pbcore-white {
+          margin: auto auto 10px !important;
+        }
+        .carousel-content {
+          img {
+            margin: 0;
+            height: 40vh;
+          }
+          .carousel-control-prev, .carousel-control-next {
+            display: none;
+          }
+        }
+      }
+      .form-section {
+        padding: 0; 
+        .login-form {
+          padding: 40px 5px;
+          border-bottom-left-radius: 40px;
+          border-bottom-right-radius: 40px;
+          img {
+            width: 160px;
+          }
+          .form-title {
+            text-align: center;
+            margin-bottom: 20px !important;
+            br {
+              display: none;
+            }
+            span {
+              font-size: 25px;
+            }
+          }
+          .forgot-password a {
+            font-size: 12px !important;
+          }
+          button {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+  .login-main, .information-page{
+    .content{
+      img.pbcore_logo{
+        width: 320px;
+      }
+    }
+    .white-form-login{
+      margin-top: 30px;
+      padding: 50px 60px !important;
+    }
+  }
+}
+
+@media screen and (max-width:767px) {
+ .login-main, .information-page{
+    .content{
+      img.pbcore_logo{
+        width: 240px;        
+      }
+    }
+  } 
+}
+
+@media (max-width: 320px) {
+  .login-main, .information-page{   
+    .content{
+      top: 3% !important;
+      .white-form-login{
+        .form-title{
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}

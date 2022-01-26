@@ -1,0 +1,93 @@
+.notification-page {
+  .card {
+    border: 1px solid #DBE4F2;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin-bottom: 5px;
+    border-radius: 0;
+    .card-title-head {
+      border-bottom: 1px solid #DBE4F2;
+    }
+    .card-title {
+      margin-bottom: 0;
+      .back-btn {
+        padding: 10px 25px;
+      }
+    }
+    .card-body {
+      padding: 10px 0;
+      h5 {
+        margin: 10px 0 20px;
+      }
+      .card-text {
+        margin: 0 1.5rem;
+        display: block;
+        a {
+          z-index: 9;
+          position: relative;
+        }
+        b {
+          color: black;
+        }
+        ul {
+          position: absolute;
+          right: 1.5rem;
+          top: 10px;
+          width: 100%;
+          .unread-icon {
+            width: 10px;
+            height: 10px;
+            background-color: #007bff !important;
+            display: inline-block;
+            border-radius: 10px;
+          }
+          .mark-as-read {
+            position: relative;
+            button {
+              display: none;
+              border: none;
+              border-radius: 3px;
+              position: absolute;
+              z-index: 20;
+              right: -10px;
+              top: -50px;
+              padding: 12px 10px;
+              background-color: #10BCE6;
+              color: #fff;
+              box-shadow: 0px 1px 6px #4F698179;
+              &:after {
+                content: '';
+                border-left: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-top: 7px solid #10BCE6;
+                position: absolute;
+                bottom: -6px;
+                right: 10px;
+              }
+              &:hover {
+                display: inline-block;
+              }
+            }
+            i {
+              padding: 3px 0;
+              &:hover {
+                ~ button {
+                  display: inline-block ;
+                  
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+#notif-page-area{
+  b {
+    color: black !important;
+  }
+}
